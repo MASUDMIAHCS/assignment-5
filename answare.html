@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answare</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="font-[Poppins] bg-[#F4F7FF]">
+    <main class="max-w-screen-xl mx-auto p-3">
+        <!-- navber section -->
+        <nav class="bg-[#FFF] p-3 flex rounded-lg justify-between">
+            <div class="flex items-center gap-3">
+            <img src="A5-Dev-Board/assets/logo.png" alt="uploded">
+             <h1 class="text-3xl font-extrabold text-[#00303C]">
+                <span class="font-normal text-[#00303C] text-3xl">
+                    Dev
+                </span>
+                Board
+             </h1>
+             </div>
+             <div class="flex items-center">
+                <button class="btn btn-primary" id="back-button">Back to Desk</button>
+             </div>
+            </nav>
+            <h1 class="text-black font-bold text-2xl text-center mt-5">
+                Blogs
+            </h1>
+            <!-- question & answare section1 -->
+             <div class="rounded-lg p-3 mt-5 bg-[#FFF]">
+                <h3 class="text-black font-bold text-lg border-b-2 border-gray-400 border-dashed pb-1">
+                    Question-1: What are the different ways to select an element in the DOM?
+                </h3>
+                <p class="mt-2 text-base font-medium">
+                    In the DOM, we can select an element through different ways. In this case, the ways depend on the situation. Whatever, let's try to see some selectors in the DOM by which we will be able to select an element. The most well known selectors in DOM are listed below: querySelector(), querySelectorAll(), getElementById(), getElementByClassName() and so on. 
+                    querySelector(), querySelectorAll() can be used to select an element in css styling. But there is a little difference between querySelector() and querySelectorAll(), that is: querySelector() is able to select one element through either id or class whereas querySelectorAll() is able to select one or more than one elements through either id or class and produce a NodeList of the given elements. We can use getElementById() to select an individual element with respect to only specific id of the given element. In the same way, getElementByClassName() is used to select multiple elements with respect to the class name and it can produce a HTMLCollection of the given selected elements.
+                </p>
+             </div>
+             <div class="rounded-lg p-3 mt-5 bg-[#FFF]">
+                <h3 class="text-black font-bold text-lg border-b-2 border-gray-400 border-dashed pb-1">
+                    Question-2: What is the difference between innerHtml, innerText and textContent?
+                </h3>
+                <p class="mt-2 text-base font-medium">
+                    The innerHTML is a  property that can return the text content of the element, including all spacing and inner HTML tags. The innerText is also a property that is able to return just the text content of the element and all its children.
+                    The textContent property also ignores all HTML tags and returns only the text.
+                </p>
+             </div>
+             <div class="rounded-lg p-3 mt-5 bg-[#FFF]">
+                <h3 class="text-black font-bold text-lg border-b-2 border-gray-400 border-dashed pb-1">
+                    Question-3: What event delegation in the DOM?
+                </h3>
+                <p class="mt-2 text-base font-medium">
+                    We can consider the event delegation as a way or technique in which a parent element handles events for its child elements, even if the children are added dynamically after the page loads.
+                </p>
+             </div>
+             <div class="rounded-lg p-3 mt-5 bg-[#FFF]">
+                <h3 class="text-black font-bold text-lg border-b-2 border-gray-400 border-dashed pb-1">
+                    Question-4: What is event bubbling in the DOM?
+                </h3>
+                <p class="mt-2 text-base font-medium">
+                    In this case, when we click a button, an event is directed to the element. If an event handler is set for the element, the event handler is triggered. Then the event is bubbled up to the elements' parent.
+                </p>
+             </div>
+             <div class="rounded-lg p-3 mt-5 bg-[#FFF]">
+                <h3 class="text-black font-bold text-lg border-b-2 border-gray-400 border-dashed pb-1">
+                    Question-5: How do you create, add and remove element using javascript?
+                </h3>
+                <p class="mt-2 text-base font-medium">
+                    We can create a new element in the DOM of javascript using createElement() method. In the same way, the created element can be added inside the parrent element using appendChild() method. in this case, if we would like to remove the given element after adding, we can use removeChild() method.  
+                </p>
+             </div>
+    </main>
+    <script src="answare.js"></script>
+</body>
+</html>

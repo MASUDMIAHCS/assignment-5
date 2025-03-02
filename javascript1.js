@@ -166,7 +166,6 @@ document.getElementById('clear').addEventListener('click',function(event){
     document.getElementById('activity5').style.display='none';
     document.getElementById('activity6').style.display='none';
 })
-//for chalange part1
 document.getElementById('backgroundChanging').addEventListener('click',function(event){
     event.preventDefault();
     let color=['rgb(238, 130, 238)','rgb(255, 165, 0)','rgb(106, 90, 205)','rgb(120, 120, 120)','rgba(255, 99, 71, 0.2)'];
@@ -178,7 +177,9 @@ document.getElementById('backgroundChanging').addEventListener('click',function(
 let date=new Date().toDateString();
 console.log(date);
 document.getElementById('datefixed').innerText=date;
-//for chalange part3,done
-//last chalange part,done
+document.getElementById('discover').addEventListener('click',function(event){
+    event.preventDefault();
+    window.location.href='answare.html';
+})
 
 
